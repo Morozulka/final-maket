@@ -7,8 +7,7 @@ body {
 /*----------------------header---------------*/
 header {
     width: 100%;
-    background: #484642;
-    background-image: url(../img/header.jpg);
+    background: #adb2b5 url(../img/header.jpg) no-repeat center;    
     padding: 0 150px;
     box-sizing: border-box;
     display: flex;
@@ -45,6 +44,14 @@ header {
     color: #998675;
 }
 
+.logo:active .logo-svg {
+    fill: #787168;
+}
+
+.logo:active .logo-txt {
+    color: #787168;
+}
+
 nav {
     display: flex;
     margin-top: 60px;
@@ -76,23 +83,47 @@ nav {
     color: #998675;
 }
 
+.menu-link:active {
+    color: #787168;
+}
+
 .menu-icon-cart {
+    width: 22px;
+    height: 24px;
+    padding: 0;
     margin: 0 28px 0 63px;
-    fill: #fff;
+    outline: none;
+    border: 2px solid transparent;
+    background: transparent;
 }
 
 .menu-icon-cart:hover {
-    fill: #998675;
+    border: 2px solid #998675;
+}
+
+.menu-icon-cart:active {
+    background: #998675;
 }
 
 .menu-icon-search {
-    fill: #fff;
+    width: 24px;
+    height: 24px;
+    outline: none;
+    background: url(../img/icon-search.png) no-repeat;
+    border: 2px solid transparent;
 }
 
 .menu-icon-search:hover {
-    fill: #998675;
+    border: 2px solid #998675;
 }
-    
+
+.menu-icon-search:focus {
+    width: 300px;
+    transition: width 1s ease-out;
+    background-position: right;
+    border: 2px solid #998675;
+}
+
 .head {
     width: 100%;
     display: flex;
@@ -194,4 +225,3 @@ nav {
     border: 2px solid #d3c1ad;
     background: transparent;
 }
-
