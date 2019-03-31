@@ -428,6 +428,97 @@ nav {
     box-shadow: inset 0 -3px 0 #736357;
 }
 
+/*---------------------projects-------------------*/
+.projects {
+    width: 100%;
+    padding: 80px 0;
+    background: #fff;
+}
+
+.projects-name {
+    width: 100%;
+    color: #555555;
+    font-family: "Raleway - Semi Bold";
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 0 24px 0;
+}
+
+.projects-txt {
+    width: 757px;
+    margin: 0 auto;
+    color: #8c8c8c;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    text-align: center;
+}
+
+.projects-nav {
+    width: 100%;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.projects-nav-btn {
+    width: 135px;
+    min-height: 32px;
+    border-radius: 3px;
+    border: 1px solid #ebebeb;
+    background-color: #fff;
+    outline: none;
+    color: #8c8c8c;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 21px;
+    margin: 0 5px;
+}
+
+.projects-nav-btn:hover {
+    background-color: #998675;
+    color: #fff;
+}
+
+.projects-nav-btn:active {
+    background-color: #736356;
+    color: #fff;
+}
+
+.projects-photo-wrapper {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.projects-photo {
+    margin: 0 15px 30px 15px;
+}
+
+.projects-photo-txt {
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.projects-photo-name {
+    color: #c7b299;
+    font-family: Raleway;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.projects-photo-text {
+    color: #d1d1d1;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+}
+
 /*--------------------footer-------------------*/
 footer {
     height: 300px;
