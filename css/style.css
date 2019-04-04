@@ -7,9 +7,9 @@ body {
 /*----------------------header---------------*/
 header {
     width: 100%;
-    background: #484642;
-    background-image: url(../img/header.jpg);
-    padding: 0 150px;
+    background: #adb2b5 url(../img/header.jpg) no-repeat center;
+    background-size: cover;
+    padding: 0 150px 40px 150px;
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
@@ -45,6 +45,14 @@ header {
     color: #998675;
 }
 
+.logo:active .logo-svg {
+    fill: #787168;
+}
+
+.logo:active .logo-txt {
+    color: #787168;
+}
+
 nav {
     display: flex;
     margin-top: 60px;
@@ -76,23 +84,47 @@ nav {
     color: #998675;
 }
 
+.menu-link:active {
+    color: #787168;
+}
+
 .menu-icon-cart {
+    width: 22px;
+    height: 24px;
+    padding: 0;
     margin: 0 28px 0 63px;
-    fill: #fff;
+    outline: none;
+    border: 2px solid transparent;
+    background: transparent;
 }
 
 .menu-icon-cart:hover {
-    fill: #998675;
+    border: 2px solid #998675;
+}
+
+.menu-icon-cart:active {
+    background: #998675;
 }
 
 .menu-icon-search {
-    fill: #fff;
+    width: 24px;
+    height: 24px;
+    outline: none;
+    background: url(../img/icon-search.png) no-repeat;
+    border: 2px solid transparent;
 }
 
 .menu-icon-search:hover {
-    fill: #998675;
+    border: 2px solid #998675;
 }
-    
+
+.menu-icon-search:focus {
+    width: 300px;
+    transition: width 1s ease-out;
+    background-position: right;
+    border: 2px solid #998675;
+}
+
 .head {
     width: 100%;
     display: flex;
@@ -185,7 +217,7 @@ nav {
     width: 11px;
     height: 11px;
     border-radius: 50%;
-    border: 2px solid transparent;
+    border: 2px solid transparent;/* как-то не так работает */
     background: #d3c1ad;
     margin: 0 5px;
 }
@@ -195,3 +227,386 @@ nav {
     background: transparent;
 }
 
+.head-rou-link:active {
+    border: 2px solid #fff;
+    background: #fff;
+}
+
+/*-----------------------relize------------------*/
+.relize {
+    width: 100%;
+    background: #fbfaf8;
+}
+
+.relize-nav {
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 80px 0;
+    box-sizing: border-box;
+}
+
+.relize-nav-link {
+    display: block;
+    width: 266px;
+    color: #8c8c8c;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 17px;
+}
+
+.relize-nav-link svg {
+    fill: #555;
+}
+
+.relize-nav-link h5 {
+    color: #555;
+    margin: 30px 0 24px 0;
+}
+
+.relize-nav-link p {
+    margin: 0 0 30px 0;
+}
+
+.relize-nav-link:after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 3px;
+    background-color: #f1eee9;
+    ;
+    margin: 0 auto;
+}
+
+.relize-nav-link:hover svg {
+    fill: #c7b299;
+}
+
+.relize-nav-link:hover h5 {
+    color: #c7b299;
+}
+
+.relize-nav-link:hover:after {
+    background-color: #c7b299;
+}
+
+.relize-nav-link:active svg {
+    fill: #787168;
+}
+
+.relize-nav-link:active h5 {
+    color: #787168;
+}
+
+.relize-nav-link:active:after {
+    background-color: #787168;
+}
+
+.relize-name {
+    width: 100%;
+    color: #555555;
+    font-family: "Raleway - Semi Bold";
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    margin: 83px 0 24px 0;
+}
+
+.relize-txt {
+    width: 757px;
+    color: #8c8c8c;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.relize-img {
+    width: 1230px;
+    height: 482px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 40px;
+}
+
+.relize-img-left {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.relize-img-left:hover {
+    z-index: 4;
+}
+
+.relize-img-right {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
+.relize-img-right:hover {
+    z-index: 5;
+}
+
+.relize-img-center {
+    position: absolute;
+    top: 0;
+    left: 230px;
+    ;
+    z-index: 3;
+}
+
+/*--------------------aside------------------*/
+.aside {
+    width: 100%;
+    padding: 50px 375px;
+    box-sizing: border-box;
+    background-color: #f4f5f8;
+    background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.aside-txt {
+    width: 530px;
+}
+
+.aside-name {
+    font-family: Raleway;
+    font-size: 28px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.aside-name span {
+    color: #c7b299;
+}
+
+.aside-text {
+    color: #615855;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.aside-btn {
+    width: 170px;
+    min-height: 50px;
+    border-radius: 3px;
+    background-color: #998675;
+    text-transform: uppercase;
+    font-family: Raleway;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 50px;
+    text-align: center;
+    outline: none;
+    box-shadow: inset 0 -3px 0 #736357;
+    border: none;
+}
+
+.aside-btn:hover {
+    background-color: #736356;
+    box-shadow: inset 0 -3px 0 #998675;
+    color: #ccc;
+}
+
+.aside-btn:active {
+    color: #fff;
+    box-shadow: inset 0 -3px 0 #736357;
+}
+
+/*---------------------projects-------------------*/
+.projects {
+    width: 100%;
+    padding: 80px 0;
+    background: #fff;
+}
+
+.projects-name {
+    width: 100%;
+    color: #555555;
+    font-family: "Raleway - Semi Bold";
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 0 24px 0;
+}
+
+.projects-txt {
+    width: 757px;
+    margin: 0 auto;
+    color: #8c8c8c;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    text-align: center;
+}
+
+.projects-nav {
+    width: 100%;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.projects-nav-btn {
+    width: 135px;
+    min-height: 32px;
+    border-radius: 3px;
+    border: 1px solid #ebebeb;
+    background-color: #fff;
+    outline: none;
+    color: #8c8c8c;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 21px;
+    margin: 0 5px;
+}
+
+.projects-nav-btn:hover {
+    background-color: #998675;
+    color: #fff;
+}
+
+.projects-nav-btn:active {
+    background-color: #736356;
+    color: #fff;
+}
+
+.projects-photo-wrapper {
+    max-width: 1300px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.projects-photo {
+    margin: 0 15px 30px 15px;
+    position: relative;
+}
+
+.projects-photo-img {
+    display: block;
+}
+
+.projects-photo-txt {
+    padding: 30px;
+    box-sizing: border-box;
+    background: #fbfaf8;
+    position: relative;
+}
+
+.projects-photo-txt:before {
+    content: "";
+    border: 20px solid transparent;	
+    border-bottom: 10px solid #fbfaf8;
+    position: absolute;
+    top: -30px;
+    left: 19px;
+}
+
+.projects-photo-name {
+    color: #c7b299;
+    font-family: Raleway;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 0 10px 0;
+}
+
+.projects-photo-text {
+    color: #d1d1d1;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    margin: 0;
+}
+
+.projects-photo-btn_link,
+.projects-photo-btn_lupa {
+    width: 26px;
+    height: 26px;
+    display: none;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    position: absolute;
+    top: 106px;
+}
+
+.projects-photo-btn_link {
+    background-image: url(../img/link.svg);
+    left: 144px;
+}
+
+.projects-photo-btn_lupa {
+    background-image: url(../img/lupa.svg);
+    right: 146px;
+}
+
+.projects-photo:hover .projects-photo-btn_link {
+    display: block;
+}
+
+.projects-photo:hover .projects-photo-btn_lupa {
+    display: block;
+}
+
+.projects-photo:hover .projects-photo-img {
+    filter: brightness(40%);
+}
+
+.projects-photo:hover .projects-photo-txt {
+    background: #362f2d;
+}
+
+.projects-photo:hover .projects-photo-txt:before {
+    border-bottom: 10px solid #362f2d;
+}
+
+.projects-photo:hover .projects-photo-btn_link:hover {
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+
+.projects-photo:hover .projects-photo-btn_lupa:hover {
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+
+.projects-photo:hover .projects-photo-btn_link:active {
+    border: 2px solid #362f2d;
+    border-radius: 5px;
+    background: #362f2d;
+}
+
+.projects-photo:hover .projects-photo-btn_lupa:active {
+    border: 2px solid #362f2d;
+    border-radius: 5px;
+    background: #362f2d;
+}
+
+/*--------------------footer-------------------*/
+footer {
+    height: 300px;
+}
