@@ -8,6 +8,7 @@ body {
 header {
     width: 100%;
     background: #adb2b5 url(../img/header.jpg) no-repeat center;
+    background-size: cover;
     padding: 0 150px 40px 150px;
     box-sizing: border-box;
     display: flex;
@@ -216,8 +217,7 @@ nav {
     width: 11px;
     height: 11px;
     border-radius: 50%;
-    border: 2px solid transparent;
-    /* как-то не так работает */
+    border: 2px solid transparent;/* как-то не так работает */
     background: #d3c1ad;
     margin: 0 5px;
 }
@@ -490,6 +490,7 @@ nav {
 .projects-photo-wrapper {
     max-width: 1300px;
     margin: 0 auto;
+    margin-bottom: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -497,11 +498,27 @@ nav {
 
 .projects-photo {
     margin: 0 15px 30px 15px;
+    position: relative;
+}
+
+.projects-photo-img {
+    display: block;
 }
 
 .projects-photo-txt {
     padding: 30px;
     box-sizing: border-box;
+    background: #fbfaf8;
+    position: relative;
+}
+
+.projects-photo-txt:before {
+    content: "";
+    border: 20px solid transparent;	
+    border-bottom: 10px solid #fbfaf8;
+    position: absolute;
+    top: -30px;
+    left: 19px;
 }
 
 .projects-photo-name {
@@ -509,6 +526,7 @@ nav {
     font-family: Raleway;
     font-size: 20px;
     font-weight: 500;
+    margin: 0 0 10px 0;
 }
 
 .projects-photo-text {
@@ -517,6 +535,75 @@ nav {
     font-size: 14px;
     font-weight: 300;
     line-height: 20px;
+    margin: 0;
+}
+
+.projects-photo-btn_link,
+.projects-photo-btn_lupa {
+    width: 26px;
+    height: 26px;
+    display: none;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    position: absolute;
+    top: 106px;
+}
+
+.projects-photo-btn_link {
+    background-image: url(../img/link.svg);
+    left: 144px;
+}
+
+.projects-photo-btn_lupa {
+    background-image: url(../img/lupa.svg);
+    right: 146px;
+}
+
+.projects-photo:hover .projects-photo-btn_link {
+    display: block;
+}
+
+.projects-photo:hover .projects-photo-btn_lupa {
+    display: block;
+}
+
+.projects-photo:hover .projects-photo-img {
+    filter: brightness(40%);
+}
+
+.projects-photo:hover .projects-photo-txt {
+    background: #362f2d;
+}
+
+.projects-photo:hover .projects-photo-txt:before {
+    border-bottom: 10px solid #362f2d;
+}
+
+.projects-photo:hover .projects-photo-btn_link:hover {
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+
+.projects-photo:hover .projects-photo-btn_lupa:hover {
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+
+.projects-photo:hover .projects-photo-btn_link:active {
+    border: 2px solid #362f2d;
+    border-radius: 5px;
+    background: #362f2d;
+}
+
+.projects-photo:hover .projects-photo-btn_lupa:active {
+    border: 2px solid #362f2d;
+    border-radius: 5px;
+    background: #362f2d;
 }
 
 /*--------------------footer-------------------*/
