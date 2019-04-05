@@ -279,7 +279,6 @@ nav {
     width: 70px;
     height: 3px;
     background-color: #f1eee9;
-    ;
     margin: 0 auto;
 }
 
@@ -723,6 +722,52 @@ nav {
     position: absolute;
     left: -50px;
     top: 5px;
+}
+
+/*--------------------stat-------------------*/
+.stat {
+    width: 100%;
+    padding: 60px 0;
+    box-sizing: border-box;
+    background-color: #f4f5f8;
+    background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%);
+    display: flex;
+    justify-content: center;
+}
+
+.stat-element {
+    text-align: center;
+    margin: 0 45px 0 45px;
+}
+
+.stat-element:after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+.stat-element-number {
+    display: block;
+    color: #ffffff;
+    font-family: "Montserrat - Ultra Light";
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 36px;
+    margin: 30px 0 21px 0;
+}
+
+.stat-element-txt {
+    display: block;
+    color: #c7b299;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
 }
 
 /*--------------------footer-------------------*/
