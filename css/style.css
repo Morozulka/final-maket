@@ -217,7 +217,8 @@ nav {
     width: 11px;
     height: 11px;
     border-radius: 50%;
-    border: 2px solid transparent;/* как-то не так работает */
+    border: 2px solid transparent;
+    /* как-то не так работает */
     background: #d3c1ad;
     margin: 0 5px;
 }
@@ -514,7 +515,7 @@ nav {
 
 .projects-photo-txt:before {
     content: "";
-    border: 20px solid transparent;	
+    border: 20px solid transparent;
     border-bottom: 10px solid #fbfaf8;
     position: absolute;
     top: -30px;
@@ -604,6 +605,125 @@ nav {
     border: 2px solid #362f2d;
     border-radius: 5px;
     background: #362f2d;
+}
+
+/*---------------------vid----------------------*/
+.vid {
+    width: 100%;
+    position: relative;
+}
+
+.vid-txt {
+    position: absolute;
+    top: 210px;
+    left: 685px;
+    width: 552px;
+    text-align: center;
+}
+
+.vid-txt-btn {
+    display: block;
+    width: 100px;
+    height: 100px;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    background: #000 url(../img/icon-play.svg) no-repeat center;
+    opacity: 0.4;
+    margin: 0 auto;
+}
+
+.vid-txt-btn:hover {
+    opacity: 0.7;
+}
+
+.vid-txt-btn:active {
+    background-color: #787168;
+}
+
+.vid-txt-name {
+    color: #ffffff;
+    font-family: Raleway;
+    font-size: 30px;
+    font-weight: 500;
+    margin: 44px 0 29px 0;
+}
+
+.vid-txt-text {
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    margin: 0 0 40px 0;
+}
+
+.vid-txt-time {
+    color: #c7b299;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+/*--------------------mobile------------------*/
+.mobile {
+    width: 100%;
+    background: #fbfaf8;
+    display: flex;
+    justify-content: center;
+}
+
+.mobile-img {
+    margin-top: 79px;
+}
+
+.mobile-txt {
+    width: 657px;
+    margin: 195px 0 0 30px;
+}
+
+.mobile-txt-name {
+    color: #555555;
+    font-family: "Raleway - Semi Bold";
+    font-size: 30px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.mobile-txt-text {
+    color: #8c8c8c;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    margin: 40px 0;
+}
+
+.mobile-txt-list {
+    color: #8c8c8c;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 32px;
+    margin: 0;
+    padding: 0 0 0 100px;
+    list-style-type: none;
+}
+
+.mobile-txt-list li {
+    position: relative;
+}
+
+.mobile-txt-list li:before {
+    content: "";
+    display: block;
+    width: 21px;
+    height: 21px;
+    background-image: url(../img/list.png);
+    position: absolute;
+    left: -50px;
+    top: 5px;
 }
 
 /*--------------------footer-------------------*/
