@@ -770,7 +770,176 @@ nav {
     margin-bottom: 30px;
 }
 
+/*---------------------posts-------------------*/
+.posts {
+    width: 100%;
+    background: #fff;
+    padding: 80px;
+    box-sizing: border-box;
+}
+
+.posts-name {
+    width: 100%;
+    color: #555555;
+    font-family: "Raleway - Semi Bold";
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+
+.posts-text {
+    width: 757px;
+    color: #8c8c8c;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.post-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.posts-post {
+    width: 370px;
+    background: #fff;
+    border: 1px solid #f8f8f8;
+    margin: 0 15px;
+    position: relative;
+    padding-bottom: 33px;
+}
+
+.posts-post-calk {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.posts-post-calk_number {
+    display: block;
+    width: 50px;
+    height: 35px;
+    border-radius: 3px 3px 0 0;
+    background-color: #363636;
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 35px;
+    text-align: center;
+}
+
+.posts-post-calk_txt {
+    display: block;
+    width: 50px;
+    height: 25px;
+    border-radius: 0 0 3px 3px;
+    background-color: #252525;
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: center;
+}
+
+.posts-post-name {
+    color: #555555;
+    font-family: Raleway;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 30px 0 0 29px;
+}
+
+.posts-post-txt {
+    color: #8c8c8c;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    margin: 19px 0 27px 29px;
+}
+
+.posts-post-link {
+    text-decoration: none;
+    color: #c7b299;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    margin: 0 0 0 30px;
+    position: relative;
+}
+
+.posts-post-link:hover:after {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 8px;
+    background-image: url(../img/arrow.png);
+    position: absolute;
+    top: 4px;
+    right: -15px;
+}
+
+.posts-post-link:active {
+    color: #fff;
+}
+
+.posts-post:hover {
+    background-color: #362f2d;
+    border: 1px solid #362f2d;
+}
+
+.posts-post:hover .posts-post-img {
+    filter: brightness(30%);
+}
+
+.posts-post:hover .posts-post-name {
+    color: #c7b299;
+}
+
+.posts-post:hover .posts-post-txt {
+    color: #fff;
+}
+
+.posts-post:hover .posts-post-calk_number {
+    background-color: #c7b299;
+}
+
+.posts-post:hover .posts-post-calk_txt {
+    background-color: #a48d72;
+}
+
+.posts-arrow {
+    width: 60px;
+    margin: 0 auto;
+}
+
+.posts-arrow-link {
+    text-decoration: none;
+    margin: 0 4px;
+}
+
+.posts-arrow-link-svg {
+    fill: #d1d1d1;
+}
+
+.posts-arrow-link:hover .posts-arrow-link-svg {
+    fill: #c7b299;
+}
+
+.posts-arrow-link:active .posts-arrow-link-svg {
+    fill: #787168;
+}
+
 /*--------------------footer-------------------*/
 footer {
     height: 300px;
+    background: #ccc;
 }
