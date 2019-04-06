@@ -938,6 +938,33 @@ nav {
     fill: #787168;
 }
 
+/*--------------------logos--------------------*/
+.logos {
+    width: 100%;
+    background: #babbc0 url(../img/footer-logos.jpg) no-repeat center;
+    background-size: cover;
+    padding: 140px 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logos-link {
+    text-decoration: none;
+    margin: 0 45px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+}
+
+.logos-link:hover {
+    border: 2px solid #fff;
+}
+
+.logos-link:active {
+    filter: brightness(40%);
+}
+
 /*--------------------footer-------------------*/
 footer {
     height: 300px;
