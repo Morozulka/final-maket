@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: 'Montserrat';
     src: url('../fonts/Montserrat/Montserrat-Regular.ttf');
@@ -60,6 +59,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    align-items: flex-start;
 }
 
 .logo {
@@ -101,6 +101,11 @@ header {
 nav {
     display: flex;
     margin-top: 20px;
+}
+
+.menu-mobile,
+#menu-check {
+    display: none;
 }
 
 .menu {
@@ -595,17 +600,17 @@ nav {
     outline: none;
     background-color: transparent;
     position: absolute;
-    top: 106px;
+    top: 30%;
 }
 
 .projects-photo-btn_link {
     background-image: url(../img/link.svg);
-    left: 144px;
+    left: 38%;
 }
 
 .projects-photo-btn_lupa {
     background-image: url(../img/lupa.svg);
-    right: 146px;
+    right: 38%;
 }
 
 .projects-photo:hover .projects-photo-btn_link {
@@ -656,10 +661,14 @@ nav {
     position: relative;
 }
 
+.vid-video {
+    width: 100%;
+}
+
 .vid-txt {
     position: absolute;
-    top: 210px;
-    left: 685px;
+    top: 30%;
+    left: 35%;
     width: 552px;
     text-align: center;
 }
@@ -1249,3 +1258,266 @@ footer {
     border-left: 1px solid #252525;
     padding-left: 10px;
 }
+
+/*-----------------------@media------------------*/
+
+@media (max-width: 575.98px) {
+    body {
+        width: 100%;
+    }
+
+    header {
+        padding: 40px;
+        justify-content: space-between;
+
+    }
+
+    nav {
+        flex-direction: row-reverse;
+        margin-top: 10px;
+    }
+
+    .menu-mobile {
+        display: block;
+        width: 60px;
+        height: 60px;
+    }
+
+    #menu-check:checked ~ .menu {
+        display: block;
+    }
+
+    .menu-mobile-icon {
+        display: block;
+        width: 60px;
+        height: 7px;
+        border-radius: 3px;
+        background: #fff;
+        margin-bottom: 10px;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 80px;
+    }
+
+    .menu-link {
+        padding: 5px 0;
+    }
+
+    .menu-icon-cart {
+        margin: 0 20px;
+    }
+
+    .menu-icon-search:focus {
+        width: 150px;
+    }
+
+    .head {
+        display: none;
+    }
+    
+    .relize-nav {
+        padding: 30px 0;
+        flex-wrap: wrap;
+    }
+    
+    .relize-nav-link {
+        width: 40%;
+        margin: 5%;
+    }
+    
+    .relize-name,
+    .relize-txt,
+    .relize-img {
+        display: none;
+    }
+    
+    .aside {
+        display: none;
+    }
+    
+    .projects {
+        padding: 30px 0;
+    }
+    
+    .projects-txt {
+        width: 90%;
+    }
+    
+    .projects-nav {
+        margin: 24px 0;
+    }
+    
+    .projects-nav-btn {
+        width: auto;
+    }
+    
+    .projects-photo {
+        width: 220px;
+    }
+    
+    .projects-photo-img {
+        width: 220px;
+        height: auto;
+    }
+    
+    .projects-photo-txt {
+        padding: 10px;
+    }
+    
+    .projects-photo-btn_link {
+    left: 30%;
+    }
+
+    .projects-photo-btn_lupa {
+    right: 30%;
+    }
+    
+    .vid-video {
+        height: 210px;
+    }
+    
+    .vid-txt {
+        top: 5%;
+        left: 1%;
+    }
+    
+    .vid-txt-btn {
+        width: 30px;
+        height: 30px;
+        background-size: cover;
+    }
+    
+    .vid-txt-name,
+    .vid-txt-text {
+        margin: 10px 0;
+    }
+    
+    .mobile {
+        flex-wrap: wrap;
+        background: url(../img/iPhone_in_hand.png) no-repeat;
+        background-size: 170px 246px;
+        background-position: 30px 220px;
+    }
+    
+    .mobile-img {
+        display: none;
+    }
+    
+    .mobile-txt {
+        width: 90%;
+        margin: 40px 0;
+    }
+    
+    .mobile-txt-text {
+        margin: 30px 0;
+        font-size: 14px;
+        line-height: 24px;
+    }
+    
+    .mobile-txt-list {
+        font-size: 12px;
+        line-height: 24px;
+        padding: 0 0 0 250px;
+    }
+    
+    .stat {
+        padding: 30px 0;
+        flex-wrap: wrap;
+    }
+    
+    .stat-element {
+        margin: 0 15px;
+    }
+    
+    .stat-element-number {
+        font-size: 32px;
+        margin: 10px 0;
+    }
+    
+    .stat-element-txt {
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .posts {
+        padding: 30px 0;
+    }
+    
+    .posts-name {
+        margin: 0 0 20px 0;
+    }
+    
+    .posts-text {
+        width: 90%;
+    }
+    
+    .post-wrapper {
+        margin: 20px 0 0 0;
+        flex-wrap: wrap;
+    }
+    
+    .posts-post {
+        margin: 0 0 15px 0;
+    }
+    
+    .posts-arrow {
+        display: none;
+    }
+    
+    .logos {
+        padding: 40px 0;
+    }
+    
+    .logos-link {
+        margin: 0 15px;
+    }
+    
+    .logos-link-img {
+        width: 100px;
+        height: auto;
+    }
+    
+    .footer {
+        padding: 30px 0;
+        flex-wrap: wrap;
+    }
+    
+    .footer-txt {
+        width: 40%;
+        margin-right: 5%;
+    }
+    
+    .footer-posts {
+        width: 40%;
+        margin: 10px 0 0 0;
+    }
+    
+    .footer-twit {
+        width: 40%;
+        margin: 5% 5% 0 0;
+    }
+    
+    .footer-widget {
+        width: 40%;
+        margin: 5% 0 0 0;
+    }
+    
+    .footer-widget-img {
+        width: 100px;
+        height: auto;
+    }
+    
+    .footer-foot {
+        margin: 20px 0;
+    }
+    
+    .footer-footer {
+        margin: 0;
+    }
+}
+
+
+
