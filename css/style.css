@@ -1259,12 +1259,149 @@ footer {
     padding-left: 10px;
 }
 
-/*-----------------------@media------------------*/
+/*----------------------@media-1366-----------------*/
+
+@media (max-width: 1366px) {
+     body {
+        width: 100%;
+    }
+    
+    header {
+        padding: 40px 100px;
+    }
+    
+    .menu {
+        width: 600px;
+    }
+    
+    .menu-icon-cart {
+        margin: 0 18px 0 33px;
+    }
+    
+    .menu-icon-search:focus {
+        width: 200px;
+    }
+    
+    .aside {
+        padding: 50px 200px;
+    }
+    
+    .vid-video {
+        height: 500px;
+    }
+
+    .vid-txt {
+        top: 20%;
+        left: 30%;
+    }
+    
+    .footer {
+        padding: 80px 50px;
+    }
+}
+
+/*----------------------@media-1024-----------------*/
+
+@media (max-width: 1023.98px) {
+    body {
+        width: 100%;
+    }
+    
+    /*------------header-------------*/    
+    .head {
+        margin-top: 185px;
+    }
+    .head-rou {
+        margin-top: 200px;
+    }
+    
+    /*--------------relize--------------*/
+    .relize-name,
+    .relize-txt,
+    .relize-img {
+        display: none;
+    }
+    
+    /*-------------aside-------------*/
+    .aside {
+        display: none;
+    }
+    
+    /*-------------vid-----------*/
+    .vid-video {
+        height: 375px;
+    }
+    
+    .vid-txt {
+        top: 10%;
+        left: 25%;
+    }
+    
+    .vid-txt-btn {
+        width: 70px;
+        height: 70px;
+        background-size: cover;
+    }
+    
+     /*-------------posts------------*/
+    .post-wrapper {
+        flex-wrap: wrap;
+        margin: 0;
+    }
+    
+    .posts-post {
+        margin: 30px 15px 0 15px;
+    }
+    
+    .posts-arrow {
+        display: none;
+    }
+    
+    /*-------------logos------------*/
+    .logos {
+        padding: 100px 0;
+    }
+
+    .logos-link-img {
+        width: 160px;
+        height: auto;
+    }
+    
+    /*-------------footer---------------*/
+    .footer {
+        flex-wrap: wrap;
+        padding: 80px;
+    }
+    
+    .footer-txt {
+        margin-right: 132px;
+    }
+    
+    .footer-posts {
+        margin: 28px 0 0 0;
+    }
+    
+    .footer-twit {
+        margin: 28px 120px 0 0;
+    }
+    
+    .footer-foot {
+        margin: 20px 100px 0 0;
+    }
+
+    .footer-footer {
+        margin: 20px 0 0 0;
+    }
+
+
+/*----------------------@media-576-----------------*/
 
 @media (max-width: 575.98px) {
     body {
         width: 100%;
     }
+
+    /*------------header-------------*/
 
     header {
         padding: 40px;
@@ -1317,207 +1454,216 @@ footer {
     .head {
         display: none;
     }
-    
+
+    /*--------------relize--------------*/
+
     .relize-nav {
         padding: 30px 0;
         flex-wrap: wrap;
     }
-    
+
     .relize-nav-link {
         width: 40%;
         margin: 5%;
     }
-    
+
     .relize-name,
     .relize-txt,
     .relize-img {
         display: none;
     }
-    
+
+    /*-------------aside-------------*/
+
     .aside {
         display: none;
     }
-    
+
+    /*-------------projects--------------*/
+
     .projects {
         padding: 30px 0;
     }
-    
+
     .projects-txt {
         width: 90%;
     }
-    
+
     .projects-nav {
         margin: 24px 0;
     }
-    
+
     .projects-nav-btn {
         width: auto;
     }
-    
+
     .projects-photo {
         width: 220px;
     }
-    
+
     .projects-photo-img {
         width: 220px;
         height: auto;
     }
-    
+
     .projects-photo-txt {
         padding: 10px;
     }
-    
+
     .projects-photo-btn_link {
-    left: 30%;
+        left: 30%;
     }
 
     .projects-photo-btn_lupa {
-    right: 30%;
+        right: 30%;
     }
-    
+
+    /*-------------vid-----------*/
+
     .vid-video {
         height: 210px;
     }
-    
+
     .vid-txt {
         top: 5%;
         left: 1%;
     }
-    
+
     .vid-txt-btn {
         width: 30px;
         height: 30px;
         background-size: cover;
     }
-    
+
     .vid-txt-name,
     .vid-txt-text {
         margin: 10px 0;
     }
-    
+
+    /*-------------mobile--------------*/
+
     .mobile {
         flex-wrap: wrap;
         background: url(../img/iPhone_in_hand.png) no-repeat;
         background-size: 170px 246px;
         background-position: 30px 220px;
     }
-    
+
     .mobile-img {
         display: none;
     }
-    
+
     .mobile-txt {
         width: 90%;
         margin: 40px 0;
     }
-    
+
     .mobile-txt-text {
         margin: 30px 0;
         font-size: 14px;
         line-height: 24px;
     }
-    
+
     .mobile-txt-list {
         font-size: 12px;
         line-height: 24px;
         padding: 0 0 0 250px;
     }
-    
+
+    /*------------stat-------------*/
+
     .stat {
         padding: 30px 0;
         flex-wrap: wrap;
     }
-    
+
     .stat-element {
         margin: 0 15px;
     }
-    
+
     .stat-element-number {
         font-size: 32px;
         margin: 10px 0;
     }
-    
+
     .stat-element-txt {
         font-size: 10px;
         margin-bottom: 10px;
     }
-    
+
+    /*-------------posts------------*/
+
     .posts {
         padding: 30px 0;
     }
-    
+
     .posts-name {
         margin: 0 0 20px 0;
     }
-    
+
     .posts-text {
         width: 90%;
     }
-    
+
     .post-wrapper {
         margin: 20px 0 0 0;
-        flex-wrap: wrap;
     }
-    
+
     .posts-post {
         margin: 0 0 15px 0;
     }
-    
-    .posts-arrow {
-        display: none;
-    }
-    
+
+    /*-------------logos------------*/
+
     .logos {
         padding: 40px 0;
     }
-    
+
     .logos-link {
         margin: 0 15px;
     }
-    
+
     .logos-link-img {
         width: 100px;
         height: auto;
     }
-    
+
+    /*-------------footer---------------*/
+
     .footer {
         padding: 30px 0;
-        flex-wrap: wrap;
     }
-    
+
     .footer-txt {
         width: 40%;
         margin-right: 5%;
     }
-    
+
     .footer-posts {
         width: 40%;
         margin: 10px 0 0 0;
     }
-    
+
     .footer-twit {
         width: 40%;
         margin: 5% 5% 0 0;
     }
-    
+
     .footer-widget {
         width: 40%;
         margin: 5% 0 0 0;
     }
-    
+
     .footer-widget-img {
         width: 100px;
         height: auto;
     }
-    
+
     .footer-foot {
         margin: 20px 0;
     }
-    
+
     .footer-footer {
         margin: 0;
     }
 }
-
-
-
